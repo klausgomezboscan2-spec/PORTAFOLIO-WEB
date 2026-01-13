@@ -353,7 +353,7 @@ display: none;
   content: "";
   position: absolute;
   inset: 0;
-  background: url('../imagenes/fondo_noticias.jpg') no-repeat center/cover fixed;
+  background: url('../Imagenes/fondo_noticias.jpg') no-repeat center/cover fixed;
   opacity: 0.7;
   z-index: 0;
 }
@@ -657,3 +657,4 @@ display: none;
   }
 
 }
+
