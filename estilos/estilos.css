@@ -1005,6 +1005,7 @@ section {
   font-weight: 600;
   color: #222;
   margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .separador {
@@ -1075,4 +1076,5 @@ section {
 }
 
 /* ...existing code... */
+
 
