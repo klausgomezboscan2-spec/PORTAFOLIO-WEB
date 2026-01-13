@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <!--Metadatos-->
+        <meta charset="utf-8">
+        <meta name="Autor" content="Andrés Esteban Gómez Salamanca">
+        <meta name="description" content="Tienda online de articulos varios relacionados con el anime">
+        <meta name="keywords" content="Ropa, Bisuteria, Manga, figuras de acción">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Titulo-->
+
+        <title> | Storetaku | Tienda Online | </title>
+
+        <!--Favicon-->
+
+        <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+
+        <!--bootstrap-->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <!--Css-->
+
+        <link href="CSS/estilos.css" rel="stylesheet">
+        
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Playball&family=Raleway:wght@100&family=Ruthie&display=swap" rel="stylesheet">
+
+        <!--Iconos-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    </head>
+
+    <body>
+        
+        <!--Barra de navegacion (fija y destacada con fondo personalizado)-->
+
+        <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top shadow-sm">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbar-Toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/logo.PNG" alt="logo de la pagina web">
+                </a>
+                <button id="cart-button" class="btn btn-outline-light ms-auto me-2 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas" aria-label="Abrir carrito" title="Abrir carrito">
+                  <i class="bi bi-cart"></i>
+                  <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display:none" aria-live="polite" aria-atomic="true">0</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-Toggler">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobre-mi"> Sobre nosotros </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#articulos">Artículos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#contactos">Contactos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!--Seccion Hero-->
+
+        <section class="Hero align-items-stretch">
+
+          <div class="Hero-principal d-flex flex-column justify-content-center align-items-center">
+
+            <img class="Hero-imagen-perfil rounded-circle" src="imagenes/perfil.png" width="200" alt="imagen de perfil">
+            <h1>¡Bienvenido! A la central de Storetaku</h1>
+            <h2>Venta de ropa, figuras, manga y mucho más del mundo otaku para ti</h2>
+
+          </div>
+
+
+
+        </section>
+  
+        <!--Sobre mi-->
+
+        <section id="sobre-mi" class="Sobre-mi seccion-oscura">
+          <div class="contenedor">
+
+              <h2 class="seccion-titulo text-blanco"> Conoce la tienda online perfecta para cualquier oraku, !!Sotoretaku¡¡ </h2>
+              <p class="seccion-texto">Somos una tienda online abierta 24/7 con un catálogo amplio para complacer a los fans del anime: ropa, figuras de acción y colección, miles de volúmenes de manga, joyería y más. Recuerda que todos nuestros artículos giran completamente en torno al anime.</p>
+
+          </div>
+        </section>
+
+        <!--Experiencia-->
+
+        <section class="Experiencia seccion-clara">
+          
+          <div class="container text-center">
+
+            <div class="row">
+
+               <!--Ventas-->
+               <div class="columna col-12 col-md-4">
+
+                <i class="bi bi-cash-coin"></i>
+                <p class="Experiencia-titulo">Ventas</p>
+                <p>Aquí podras encontrar los productos disponibles que tenemos a la venta</p>
+
+                <a class="badges-contenedor">
+                  <span class="badge text-bg-dark">Ropa</span>
+                  <span class="badge text-bg-dark">Manga</span>
+                  <span class="badge text-bg-dark">Figuras de acción</span>
+                  <span class="badge text-bg-dark">Joyeria</span>
+                </a>
+
+               </div>
+
+               <!---Antencion al cliente-->
+               <div class="columna col-12 col-md-4">
+
+                <i class="bi bi-telephone-inbound-fill"></i>
+                <p class="Experiencia-titulo">Antencion al cliente</p>
+                <p>En esta pagína tendras disponible una atención formal y completa, consiguiendo guiarte y ayudarte de la mejor forma </p>
+                
+                <a class="badges-contenedor">
+                  <span class="badge text-bg-dark">Whatsapp</span>
+                  <span class="badge text-bg-dark">Facebook</span>
+                  <span class="badge text-bg-dark">Instagram</span>
+                  <span class="badge text-bg-dark">Gmail</span>
+                </a>
+              </div>
+             
+               <!--Entrega de productos-->
+               <div class="columna col-12 col-md-4">
+   
+                <i class="bi bi-bag-check-fill"></i>
+                <p class="Experiencia-titulo">Entrega de productos</p>
+                <p>Storetaku asegura que la entrega de tu producto sea lo más oportuna posible y dentro del plazo prometido.</p>
+
+                <a class="badges-contenedor">
+                  <span class="badge text-bg-dark">A tiempo</span>
+                  <span class="badge text-bg-dark">En la puerta de tu casa</span>
+                </a>
+               </div>            
+
+             </div> 
+          </div>
+
+        </section>
+
+        <!--Productos-->
+
+        <section id="articulos" class="productos seccion-clara d-flex flex-column">
+          <h2 class="seccion-titulo2 text-negro">Productos</h2>
+          <h3 class="seccion-descripcion">Estos son algunos de los productos que podrás encontrar aquí en Storetaku</h3>
+
+          <!--Galeria de productos-->
+        
+
+          <div class="flex-row container text-center producto-contenedor">
+            
+            <div class="row">
+                      
+              
+          <!--Seccion de ropa-->
+
+              <div class="col-12 col-md-6 col-lg-3" >
+                <div class="producto">
+                  <img class="Hero-inferior-imagen1 img-fluid col-12" src="imagenes/articulos/ropa/1.jpg" alt="collares">
+                      
+                      <div class="overlay">
+                      <p>Ropa</p>
+                      
+                      <div class=" inconos-contenedor">
+                        <a href="#ropa" class="btn btn-link text-reset open-section" aria-label="Ver ropa">
+                          <i class="bi bi-arrow-up-right-square"></i>
+                        </a>
+                      </div>
+                      </div>  
+                </div>
+              </div>   
+
+          <!--Seccion de Manga-->
+
+              <div class="col-12 col-md-6 col-lg-3">
+                      <div class="producto">
+                        <img class="Hero-inferior-imagen1 img-fluid col-12" src="imagenes/articulos/manga/3.jpg" alt="collares">
+                                
+                            <div class="overlay">
+                            <p>Manga</p>
+                                
+                            <div class=" inconos-contenedor">
+                              <a href="#manga" class="btn btn-link text-reset open-section" aria-label="Ver manga">
+                                  <i class="bi bi-arrow-up-right-square"></i>
+                              </a>
+                            </div>
+                            </div>  
+                       </div>
+              </div>
+
+          <!--Seccion de Joyeria-->
+
+              <div class="col-12 col-md-6 col-lg-3" >
+                <div class="producto">
+                  <img class="Hero-inferior-imagen1 img-fluid col-12" src="imagenes/articulos/joyeria/3.jpg" alt="collares">
+                                    
+                    <div class="overlay">
+                      <p>Joyeria</p>
+                                    
+                      <div class=" inconos-contenedor">
+                          <a href="#joyeria" class="btn btn-link text-reset open-section" aria-label="Ver joyería">
+                            <i class="bi bi-arrow-up-right-square"></i>
+                          </a>
+                      </div>
+                    </div>  
+                  </div>
+              </div>
+
+          <!--Sección de Figuras de acción-->
+               <div class="col-12 col-md-6 col-lg-3">
+                  <div class="producto">
+                     <img class="Hero-inferior-imagen1 img-fluid col-12" src="imagenes/articulos/figuras-de-accion/1.jpg" alt="collares">
+                                    
+                      <div class="overlay">
+                        <p>Figuras de Acción</p>
+                                    
+                          <div class=" inconos-contenedor">
+                            <a href="#figuras" class="btn btn-link text-reset open-section" aria-label="Ver figuras">
+                              <i class="bi bi-arrow-up-right-square"></i>
+                            </a>
+                          </div>
+                       </div>  
+                    </div>
+               </div>
+
+
+            </div>
+          </div>
+          
+
+        </section>
+
+
+        <!-- Secciones de Productos consolidadas -->
+
+        <section id="ropa" class="productos seccion-clara">
+          <h2 class="seccion-titulo2 text-negro">Ropa</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/1.jpg" class="card-img-top" alt="Ropa 1">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 1</h5>
+                    <p class="card-text">$19.99</p>
+                    <label class="visually-hidden" for="size-ropa-1">Talla</label>
+                    <select id="size-ropa-1" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 1">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-1" data-name="Ropa 1" data-price="19.99" data-img="imagenes/articulos/ropa/1.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/2.jpg" class="card-img-top" alt="Ropa 2">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 2</h5>
+                    <p class="card-text">$24.99</p>
+                    <label class="visually-hidden" for="size-ropa-2">Talla</label>
+                    <select id="size-ropa-2" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 2">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-2" data-name="Ropa 2" data-price="24.99" data-img="imagenes/articulos/ropa/2.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/3.jpg" class="card-img-top" alt="Ropa 3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 3</h5>
+                    <p class="card-text">$29.99</p>
+                    <label class="visually-hidden" for="size-ropa-3">Talla</label>
+                    <select id="size-ropa-3" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 3">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-3" data-name="Ropa 3" data-price="29.99" data-img="imagenes/articulos/ropa/3.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/4.jpg" class="card-img-top" alt="Ropa 4">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 4</h5>
+                    <p class="card-text">$21.99</p>
+                    <label class="visually-hidden" for="size-ropa-4">Talla</label>
+                    <select id="size-ropa-4" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 4">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-4" data-name="Ropa 4" data-price="21.99" data-img="imagenes/articulos/ropa/4.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/5.jpg" class="card-img-top" alt="Ropa 5">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 5</h5>
+                    <p class="card-text">$18.99</p>
+                    <label class="visually-hidden" for="size-ropa-5">Talla</label>
+                    <select id="size-ropa-5" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 5">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-5" data-name="Ropa 5" data-price="18.99" data-img="imagenes/articulos/ropa/5.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/6.jpg" class="card-img-top" alt="Ropa 6">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 6</h5>
+                    <p class="card-text">$22.99</p>
+                    <label class="visually-hidden" for="size-ropa-6">Talla</label>
+                    <select id="size-ropa-6" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 6">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-6" data-name="Ropa 6" data-price="22.99" data-img="imagenes/articulos/ropa/6.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/7.jpg" class="card-img-top" alt="Ropa 7">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 7</h5>
+                    <p class="card-text">$17.99</p>
+                    <label class="visually-hidden" for="size-ropa-7">Talla</label>
+                    <select id="size-ropa-7" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 7">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-7" data-name="Ropa 7" data-price="17.99" data-img="imagenes/articulos/ropa/7.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/8.jpg" class="card-img-top" alt="Ropa 8">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 8</h5>
+                    <p class="card-text">$15.99</p>
+                    <label class="visually-hidden" for="size-ropa-8">Talla</label>
+                    <select id="size-ropa-8" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 8">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-8" data-name="Ropa 8" data-price="15.99" data-img="imagenes/articulos/ropa/8.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/ropa/9.jpg" class="card-img-top" alt="Ropa 9">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Ropa 9</h5>
+                    <p class="card-text">$20.00</p>
+                    <label class="visually-hidden" for="size-ropa-9">Talla</label>
+                    <select id="size-ropa-9" class="form-select form-select-sm size-select mb-2" aria-label="Selecciona talla para Ropa 9">
+                      <option value="S">S</option>
+                      <option value="M" selected>M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                    <button class="btn btn-primary add-to-cart" data-id="ropa-9" data-name="Ropa 9" data-price="20.00" data-img="imagenes/articulos/ropa/9.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="manga" class="productos seccion-clara">
+          <h2 class="seccion-titulo2 text-negro">Manga</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/1.jpg" class="card-img-top" alt="Manga 1">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 1</h5>
+                    <p class="card-text">$9.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-1" data-name="Manga 1" data-price="9.99" data-img="imagenes/articulos/manga/1.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/2.jpg" class="card-img-top" alt="Manga 2">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 2</h5>
+                    <p class="card-text">$10.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-2" data-name="Manga 2" data-price="10.99" data-img="imagenes/articulos/manga/2.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/3.jpg" class="card-img-top" alt="Manga 3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 3</h5>
+                    <p class="card-text">$8.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-3" data-name="Manga 3" data-price="8.99" data-img="imagenes/articulos/manga/3.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/4.jpg" class="card-img-top" alt="Manga 4">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 4</h5>
+                    <p class="card-text">$11.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-4" data-name="Manga 4" data-price="11.99" data-img="imagenes/articulos/manga/4.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/5.jpg" class="card-img-top" alt="Manga 5">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 5</h5>
+                    <p class="card-text">$12.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-5" data-name="Manga 5" data-price="12.99" data-img="imagenes/articulos/manga/5.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/6.jpg" class="card-img-top" alt="Manga 6">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 6</h5>
+                    <p class="card-text">$9.49</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-6" data-name="Manga 6" data-price="9.49" data-img="imagenes/articulos/manga/6.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/7.jpg" class="card-img-top" alt="Manga 7">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 7</h5>
+                    <p class="card-text">$14.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-7" data-name="Manga 7" data-price="14.99" data-img="imagenes/articulos/manga/7.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/8.jpg" class="card-img-top" alt="Manga 8">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 8</h5>
+                    <p class="card-text">$13.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-8" data-name="Manga 8" data-price="13.99" data-img="imagenes/articulos/manga/8.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/manga/9.jpg" class="card-img-top" alt="Manga 9">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Manga 9</h5>
+                    <p class="card-text">$7.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="manga-9" data-name="Manga 9" data-price="7.99" data-img="imagenes/articulos/manga/9.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="joyeria" class="productos seccion-clara">
+          <h2 class="seccion-titulo2 text-negro">Joyería</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/1.jpg" class="card-img-top" alt="Joyería 1">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 1</h5>
+                    <p class="card-text">$29.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-1" data-name="Joyería 1" data-price="29.99" data-img="imagenes/articulos/joyeria/1.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/2.jpg" class="card-img-top" alt="Joyería 2">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 2</h5>
+                    <p class="card-text">$34.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-2" data-name="Joyería 2" data-price="34.99" data-img="imagenes/articulos/joyeria/2.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/3.jpg" class="card-img-top" alt="Joyería 3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 3</h5>
+                    <p class="card-text">$27.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-3" data-name="Joyería 3" data-price="27.99" data-img="imagenes/articulos/joyeria/3.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/4.jpg" class="card-img-top" alt="Joyería 4">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 4</h5>
+                    <p class="card-text">$31.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-4" data-name="Joyería 4" data-price="31.99" data-img="imagenes/articulos/joyeria/4.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/5.jpg" class="card-img-top" alt="Joyería 5">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 5</h5>
+                    <p class="card-text">$22.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-5" data-name="Joyería 5" data-price="22.99" data-img="imagenes/articulos/joyeria/5.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/6.jpg" class="card-img-top" alt="Joyería 6">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 6</h5>
+                    <p class="card-text">$26.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-6" data-name="Joyería 6" data-price="26.99" data-img="imagenes/articulos/joyeria/6.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/7.jpg" class="card-img-top" alt="Joyería 7">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 7</h5>
+                    <p class="card-text">$32.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-7" data-name="Joyería 7" data-price="32.99" data-img="imagenes/articulos/joyeria/7.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/8.jpg" class="card-img-top" alt="Joyería 8">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 8</h5>
+                    <p class="card-text">$28.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-8" data-name="Joyería 8" data-price="28.99" data-img="imagenes/articulos/joyeria/8.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/joyeria/9.jpg" class="card-img-top" alt="Joyería 9">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Joyería 9</h5>
+                    <p class="card-text">$35.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="joyeria-9" data-name="Joyería 9" data-price="35.99" data-img="imagenes/articulos/joyeria/9.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="figuras" class="productos seccion-clara">
+          <h2 class="seccion-titulo2 text-negro">Figuras de acción</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/1.jpg" class="card-img-top" alt="Figura 1">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 1</h5>
+                    <p class="card-text">$39.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-1" data-name="Figura 1" data-price="39.99" data-img="imagenes/articulos/figuras-de-accion/1.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/2.jpg" class="card-img-top" alt="Figura 2">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 2</h5>
+                    <p class="card-text">$49.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-2" data-name="Figura 2" data-price="49.99" data-img="imagenes/articulos/figuras-de-accion/2.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/3.jpg" class="card-img-top" alt="Figura 3">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 3</h5>
+                    <p class="card-text">$44.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-3" data-name="Figura 3" data-price="44.99" data-img="imagenes/articulos/figuras-de-accion/3.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/4.jpg" class="card-img-top" alt="Figura 4">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 4</h5>
+                    <p class="card-text">$59.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-4" data-name="Figura 4" data-price="59.99" data-img="imagenes/articulos/figuras-de-accion/4.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/5.jpg" class="card-img-top" alt="Figura 5">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 5</h5>
+                    <p class="card-text">$34.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-5" data-name="Figura 5" data-price="34.99" data-img="imagenes/articulos/figuras-de-accion/5.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/6.jpg" class="card-img-top" alt="Figura 6">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 6</h5>
+                    <p class="card-text">$39.49</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-6" data-name="Figura 6" data-price="39.49" data-img="imagenes/articulos/figuras-de-accion/6.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/7.jpg" class="card-img-top" alt="Figura 7">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 7</h5>
+                    <p class="card-text">$29.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-7" data-name="Figura 7" data-price="29.99" data-img="imagenes/articulos/figuras-de-accion/7.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/8.jpg" class="card-img-top" alt="Figura 8">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 8</h5>
+                    <p class="card-text">$36.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-8" data-name="Figura 8" data-price="36.99" data-img="imagenes/articulos/figuras-de-accion/8.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 mb-3">
+                <div class="card">
+                  <img src="imagenes/articulos/figuras-de-accion/9.jpg" class="card-img-top" alt="Figura 9">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Figura 9</h5>
+                    <p class="card-text">$42.99</p>
+                    <button class="btn btn-primary add-to-cart" data-id="figura-9" data-name="Figura 9" data-price="42.99" data-img="imagenes/articulos/figuras-de-accion/9.jpg">Agregar al carrito</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Contactos-->
+
+        <section id="contactos" class="contacto seccion-oscura">
+
+         <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+              <div class="row">
+                  <div class="col-12 col-md-4 seccion-titulo">
+                    !!Contactanos¡¡
+                  </div>
+                  <div class="col-12 col-md-4 description">
+                    Si tienes una sugerencia, comentario o podemos ayudarte en algo contactanos 
+                  </div>
+                  <div class="col-12 col-md-4 ">
+                    <a href="mailto:storetakuoficial@gmail.com">
+                       <button type="button">
+                          Contacto
+                          <i class="bi bi-envelope-heart-fill"></i>
+                       </button>
+                    </a>
+                  </div> 
+              </div>
+            </div>
+         </div>
+          
+        </section>
+
+        <!--Pie de pagina (footer)-->
+
+        <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+          <img class="footer-logo" src="imagenes/dibujo-copia.svg" alt="logo de portafolio">
+          <p class="footer-texto text-center">Siempre a tu servicio, complaciendo tus diferentes gustos y entendiéndote cada vez más. <br> Ayúdanos a crecer cada día más, a ser tan inigualables como el gran All Might.</p>
+          <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            
+             <a target="_blank" href="https://www.facebook.com/profile.php?id=61551255982628" rel="noopener noreferrer">
+              <i class="bi bi-facebook"></i>
+             </a>
+             <a href="mailto:storetakuoficial@gmail.com">
+                 <i class="bi bi-envelope-heart-fill"></i>
+             </a>
+          </div>
+          <div class="derechos-de-autor">Creado por Andrés Esteban Gómez Salamanca (2023) &#169;</div>
+        </footer>
+
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+       <!-- Carrito (offcanvas) -->
+       <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+         <div class="offcanvas-header">
+           <h5 id="cartOffcanvasLabel">Carrito</h5>
+           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+         </div>
+         <div class="offcanvas-body">
+           <div id="cart-items" class="list-group mb-3"></div>
+           <div class="d-flex justify-content-between align-items-center">
+             <strong>Total:</strong>
+             <span id="cart-total">$0.00</span>
+           </div>
+           <div class="mt-3">
+             <button id="checkout-btn" class="btn btn-success w-100">Pagar</button>
+           </div>
+         </div>
+       </div>
+
+       <script>
+         (function(){
+           const CART_KEY = 'storetaku_cart';
+           let cart = JSON.parse(localStorage.getItem(CART_KEY)) || [];
+           // Ensure older items have a size (default M)
+           cart = cart.map(i => ({ ...i, size: i.size || 'M' }));
+
+           function saveCart(){ localStorage.setItem(CART_KEY, JSON.stringify(cart)); updateCartCount(); renderCart(); }
+           function updateCartCount(){ const el = document.getElementById('cart-count'); if(!el) return; const count = cart.reduce((s,i)=>s+i.qty,0); el.textContent = count; if(count===0) el.style.display = 'none'; else el.style.display = 'inline-block'; }
+           function formatPrice(p){ return '$' + Number(p).toFixed(2); }
+
+           function renderCart(){ const container=document.getElementById('cart-items'); container.innerHTML=''; if(cart.length===0){ container.innerHTML='<div class="text-muted">El carrito está vacío</div>'; document.getElementById('cart-total').textContent = '$0.00'; return; } cart.forEach(item=>{ const el=document.createElement('div'); el.className='list-group-item d-flex justify-content-between align-items-center'; el.innerHTML = `<div><strong>${item.name}</strong><br><small class="text-muted">Talla: ${item.size} · ${formatPrice(item.price)} x ${item.qty}</small></div><div><div class="btn-group btn-group-sm" role="group"><button class="btn btn-outline-secondary btn-decrease" data-id="${item.id}" data-size="${item.size}">-</button><button class="btn btn-outline-secondary btn-increase" data-id="${item.id}" data-size="${item.size}">+</button><button class="btn btn-outline-danger btn-remove ms-2" data-id="${item.id}" data-size="${item.size}">&times;</button></div></div>`; container.appendChild(el); }); document.querySelectorAll('.btn-remove').forEach(b=>b.addEventListener('click',e=>{ removeFromCart(e.target.dataset.id, e.target.dataset.size); })); document.querySelectorAll('.btn-increase').forEach(b=>b.addEventListener('click',e=>{ changeQty(e.target.dataset.id, e.target.dataset.size,1); })); document.querySelectorAll('.btn-decrease').forEach(b=>b.addEventListener('click',e=>{ changeQty(e.target.dataset.id, e.target.dataset.size,-1); })); const total = cart.reduce((s,i)=>s + i.price*i.qty,0); document.getElementById('cart-total').textContent = formatPrice(total); }
+
+           function addToCart(product){ const existing = cart.find(it=>it.id===product.id && it.size===product.size); if(existing){ existing.qty++; } else { cart.push({...product, qty:1}); } saveCart(); const offcanvasEl = document.getElementById('cartOffcanvas'); const bsOff = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl); bsOff.show(); }
+
+           function removeFromCart(id,size){ cart = cart.filter(i=> !(i.id===id && i.size===size)); saveCart(); renderCart(); updateCartCount(); }
+           function changeQty(id,size,delta){ const it = cart.find(i=>i.id===id && i.size===size); if(!it) return; it.qty += delta; if(it.qty<=0) cart = cart.filter(i=> !(i.id===id && i.size===size)); saveCart(); renderCart(); updateCartCount(); }
+
+           document.addEventListener('DOMContentLoaded', ()=>{
+             document.querySelectorAll('.add-to-cart').forEach(b=>b.addEventListener('click', e=>{ const btn=e.currentTarget; const card = btn.closest('.card'); const sizeSel = card ? card.querySelector('.size-select') : null; const size = sizeSel ? sizeSel.value : 'M'; const product = {id:btn.dataset.id, name:btn.dataset.name, price:parseFloat(btn.dataset.price), img:btn.dataset.img, size}; addToCart(product); }));
+             document.querySelectorAll('.open-section').forEach(a=>{ a.addEventListener('click', e=>{ const href = a.getAttribute('href'); if(href && href.startsWith('#')){ document.querySelector(href).scrollIntoView({behavior:'smooth'}); } }); });
+             updateCartCount(); renderCart(); document.getElementById('checkout-btn').addEventListener('click', ()=>{ if(cart.length===0){ alert('El carrito está vacío.'); return;} alert('Gracias por su compra (demo). Total: ' + document.getElementById('cart-total').textContent); cart=[]; saveCart(); const off = bootstrap.Offcanvas.getInstance(document.getElementById('cartOffcanvas')); if(off) off.hide(); });
+
+             // Nav animations & scrollspy
+             const navbarEl = document.querySelector('.navbar');
+             const navLinksAll = document.querySelectorAll('.navbar .nav-link');
+             const sectionsObs = document.querySelectorAll('section[id]');
+             // Entrance animation
+             setTimeout(()=>{ navbarEl.classList.add('nav-animate'); }, 120);
+             // Observe sections to update active link
+             const io = new IntersectionObserver((entries)=>{
+               entries.forEach(entry=>{
+                 if(entry.isIntersecting){
+                   navLinksAll.forEach(a=>a.classList.remove('active'));
+                   const id = entry.target.id;
+                   const link = document.querySelector('.navbar .nav-link[href="#'+id+'"]');
+                   if(link) link.classList.add('active');
+                 }
+               });
+             }, { root:null, rootMargin: '0px 0px -60% 0px', threshold: 0 });
+             sectionsObs.forEach(s=>io.observe(s));
+             // Shrink navbar on scroll
+             function handleNavScroll(){ if(window.scrollY>30) navbarEl.classList.add('scrolled'); else navbarEl.classList.remove('scrolled'); }
+             window.addEventListener('scroll', handleNavScroll, { passive:true });
+             handleNavScroll();
+             // Smooth scroll for navbar links
+             document.querySelectorAll('.navbar .nav-link[href^="#"]').forEach(a=>{ a.addEventListener('click', e=>{ e.preventDefault(); const href=a.getAttribute('href'); const el=document.querySelector(href); if(el) el.scrollIntoView({ behavior:'smooth', block:'start' }); }); });
+
+             // Subtle enter animations for sections and cards (adds .in-view when visible)
+             const animTargets = document.querySelectorAll('section, .card, .Hero-principal');
+             animTargets.forEach(el=> el.classList.add('animatable'));
+             const animObserver = new IntersectionObserver((entries, obs)=>{
+               entries.forEach(entry=>{
+                 if(entry.isIntersecting){ entry.target.classList.add('in-view'); obs.unobserve(entry.target); }
+               });
+             }, { threshold: 0.12 });
+             animTargets.forEach(t=>animObserver.observe(t));
+
+             // Add-to-cart visual feedback (pulse on button and cart icon, subtle highlight on card)
+             document.querySelectorAll('.add-to-cart').forEach(b=>{ b.addEventListener('click', e=>{ const btn=e.currentTarget; // short pulse
+               btn.classList.add('pulse'); setTimeout(()=>btn.classList.remove('pulse'), 360);
+               const cartBtn = document.getElementById('cart-button'); if(cartBtn){ cartBtn.classList.add('pulse'); setTimeout(()=>cartBtn.classList.remove('pulse'), 420); }
+               const card = btn.closest('.card'); if(card){ card.classList.add('pulse'); setTimeout(()=>card.classList.remove('pulse'), 420); }
+             });
+           });
+           });
+         })();
+       </script>
+
+    </body>
+
+</html>
