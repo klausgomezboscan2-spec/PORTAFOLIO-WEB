@@ -1,0 +1,719 @@
+body {
+  background: #f2f0eb;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f0eb;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔷 ENCABEZADO */
+.Top {
+  width: 100%;
+  height: 80px;
+  background-color: #f2f0eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
+  gap: 20px;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
+
+.Top img {
+  width: 60px;
+  height: auto;
+}
+
+.Top .Titulo-MACAM {
+  width: 200px;
+  max-width: 80%;
+  height: auto;
+}
+
+/* 🔸 Responsivo: tamaños más pequeños */
+@media (max-width: 768px) {
+  .Top {
+    justify-content: center;
+  }
+
+  .Top img {
+    width: 40px;
+  }
+
+  .Top .Titulo-MACAM {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Top img {
+    width: 35px;
+  }
+
+  .Top .Titulo-MACAM {
+    width: 130px;
+  }
+}
+
+/* 🔷 NAVBAR */
+.Navbar {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7e5239;
+  position: fixed;
+  top: 100px; /* Debajo del encabezado */
+  left: 0;
+  z-index: 1050;
+  padding: 10px 20px;
+}
+
+/* 🔷 NAVBAR */
+.Navbar {
+width: 100%;
+height: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #7e5239;
+position: fixed;
+top: 100px; /* Debajo del encabezado */
+left: 0;
+z-index: 1050;
+padding: 10px 20px;
+}
+
+/* 🔷 Menú en pantallas grandes */
+.Navbar nav {
+flex-grow: 1;
+display: flex;
+justify-content: center;
+}
+
+.Navbar nav ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+gap: 20px;
+}
+
+.Navbar nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+padding: 10px 15px;
+transition: 0.3s;
+}
+
+.Navbar nav ul li a:hover {
+background-color: #88c05b;
+border-radius: 5px;
+}
+
+/* 🔷 MENÚ HAMBURGUESA */
+.menu-toggle {
+display: none;
+}
+
+/* 🔷 RESPONSIVIDAD */
+@media (max-width: 900px) {
+/* Mostrar el botón hamburguesa */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Ocultar el menú por defecto */
+.Navbar nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 200px;
+    background-color: #7e5239;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Navbar nav ul {
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+}
+
+.Navbar nav ul li {
+    padding: 10px 20px;
+}
+
+/* Mostrar el menú cuando esté activo */
+.Navbar nav.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animación del botón hamburguesa */
+.menu-toggle.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+}
+
+
+
+/* 🔹 Contenedor de la barra de búsqueda */
+.search-container {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 180px;
+  height: 35px;
+  position: absolute;
+  right: 60px; /* Ajusta la posición sin que se salga del navbar */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 🔹 Campo de entrada */
+.search-container input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: transparent;
+  min-width: 100px;
+}
+
+/* 🔹 Botón de búsqueda (sin fondo) */
+.search-container button {
+  background: none; /* Eliminamos el fondo */
+  color: #7e5239; /* Color de la lupa */
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+/* 🔹 Efecto hover */
+.search-container button:hover {
+  color: #61402d;
+}
+
+/* 🔹 Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .search-container {
+    width: 150px;
+    right: 40px;
+  }
+
+  .search-container input {
+    min-width: 90px;
+  }
+}
+
+
+
+/* 🔷 RESPONSIVIDAD */
+@media (max-width: 900px) {
+  /* Mostrar menú hamburguesa */
+  .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .menu-toggle div {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      transition: 0.3s;
+  }
+
+  /* Ocultar el menú por defecto en móviles */
+  .Navbar nav {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 60px;
+      width: 200px;
+      background-color: #7e5239;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 10px 0;
+  }
+
+  .Navbar nav ul {
+      flex-direction: column;
+      text-align: left;
+      padding: 0;
+  }
+
+  .Navbar nav ul li {
+      padding: 10px 20px;
+  }
+
+  /* Mostrar el menú cuando esté activo */
+  .Navbar nav.active {
+      display: block;
+  }
+}
+
+
+/* Contenedor principal */
+.documental {
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f0eb;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-bottom: 100px;
+  margin-top: -200px;
+}
+
+/* Imagen */
+.image-container {
+  margin-top: 200px;
+  width: 70%;
+  height: 50%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+  margin-top: 300px;
+  width: 70%;
+  height: 70%;
+  margin-left: 15%;
+  align-content: center;
+  object-fit: cover;
+}
+
+
+
+
+
+/* 📌 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .documental {
+      padding: 20px;
+      height: auto;
+  }
+
+  .image-container {
+      width: 100%;
+      height: auto;
+  }
+
+  .image-container img {
+      height: auto;
+      max-height: 300px;
+  }
+
+  .text-box {
+      width: 90%;
+      max-width: 400px;
+      padding: 15px;
+      font-size: 16px;
+  }
+
+  .button-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .button-container a {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+
+/* Seccion Noticias*/
+
+
+.produccion {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-family: "Adamina", serif;
+
+}
+
+.produccion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../imagenes/fondo_noticias.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.noticias {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.container_noticias {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section_noticias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.text_noticias {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.central-text {
+  width: calc(50% + 50%); /* 📌 Ocupa el mismo espacio que las imágenes combinadas */
+  margin: auto; /* 📌 Lo centra con el resto del contenido */
+}
+
+.img_noticias {
+  width: 50%;
+}
+
+.img_noticias img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.img_noticias video {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.reversed_noticias {
+  flex-direction: row-reverse;
+}
+
+/* 📌 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .section_noticias {
+      flex-direction: column;
+  }
+  .text_noticias,
+  .img_noticias {
+      width: 100%;
+      text-align: left;
+  }
+  .central-text {
+      width: 100%; /* 📌 En pantallas pequeñas ocupa todo el ancho */
+  }
+}
+
+
+.video-box {
+  background-color: #f2f0eb;
+  display: flex;
+
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-container video {
+  width: 60%;
+  height:50%;
+  border-radius: 15px;
+  margin-right: 15%;
+}
+.video-box {
+  background-color: #f2f0eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.center-video video {
+  width: 60%;
+  height:50%;
+  border-radius: 15px;
+}
+
+
+.boton-top {
+  position: fixed; /* 🔹 Siempre visible en pantalla */
+  bottom: 20px; /* 🔹 Separación de la parte inferior */
+  right: 20px; /* 🔹 Separación de la parte derecha */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #7e5239;
+  z-index: 1050; /* 🔹 Se mantiene sobre otros elementos */
+  display: flex; /* 🔹 Centra el icono */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 🔹 Pequeña sombra */
+  transition: all 0.3s ease-in-out; /* 🔹 Suaviza los cambios */
+  opacity: 0; /* 🔹 Oculto por defecto */
+  visibility: hidden; /* 🔹 No interactuable hasta que se muestre */
+}
+
+.boton-top:hover {
+  background-color: #61402d; /* 🔹 Cambia de color al pasar el mouse */
+}
+
+.b-top {
+  font-size: 24px;
+  text-decoration: none;
+  color: #f2f0eb;
+  font-weight: bold;
+}
+
+/* 🔹 Mostrar el botón solo cuando el usuario ha hecho scroll */
+.boton-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Estilos generales */
+.footer {
+  background-color: #c5c3bd;
+  color: #000;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+/* Información */
+.footer-info {
+  width: 35%;
+}
+
+.footer-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Mochreh Regular';
+}
+
+.footer-info h3, .footer-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Menú */
+.footer-menu {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.footer-menu a:hover {
+  color: #88C05B;
+  text-decoration: underline;
+}
+
+/* Redes Sociales */
+.footer-social {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor de los iconos en cuadrícula */
+.social-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Íconos */
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Ajuste de nombres debajo de los iconos */
+.social-icon span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Línea inferior de contacto */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 1024px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .footer-info, .footer-menu, .footer-social {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .footer-menu {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-menu ul {
+      padding: 0;
+      text-align: center;
+  }
+  .social-icons-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icons-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
