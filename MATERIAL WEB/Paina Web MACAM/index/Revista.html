@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ruta corregida al CSS -->
+    <link rel="stylesheet" href="CSS/etilosrevista.css">
+    <!-- Google Fonts (sin duplicados) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Imagenes/icono-MACAM.png">
+    <title> MACAM | Revista </title>
+</head>
+
+<body>
+
+       <!-- Encabezado -->
+       <header class="Top">
+        <img src="imagenes/icono-MACAM.png" alt="Logo-MACAM">
+        <img class="Titulo-MACAM" src="Imagenes/Titulo-MACAM.png" alt="MACAM" width="100%" height="100%">
+    </header>
+
+<!-- NAVBAR CORREGIDO -->
+<div class="Navbar">
+    <!-- Botón menú hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="index_actualizado.html#Inicio">MACAM</a></li>
+            <li><a href="#Recetario">Inicio</a></li>
+            <li><a href="#Recetario">Recetario</a></li>
+            <li><a href="#Noticias">Producción</a></li>
+            <li><a href="#Contactos">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+    <form class="search-container">
+        <input type="text" id="search" placeholder="Buscar..." required>
+        <button type="submit"><img src="Imagenes/lupa (1).png" width="17px" height="17px"></button>
+    </form>
+</div>
+
+
+<div id="Recetario" class="Recetario">
+    <div class="pdf-container">
+       <iframe allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/fcff9b7a0a.html" style="border: 1px solid lightgray; width: 800%; height: 800px;"></iframe>
+        
+    </div>
+</div>
+
+
+    <!-- Sección Noticias -->
+    <br/>
+    <div id="Noticias" class="produccion">
+        <h2 >Producción</h2>
+    </div>
+    
+    
+    <div class="noticias">
+        <div class="container_noticias">
+            <article class="section_noticias">
+                <div class="text_noticias">
+                    <p>El recetario de MACAM nació como una forma de visibilizar y reconocer la labor de los ganaderos lecheros a través de algo cotidiano y cercano: la comida. Desde el comienzo tuvimos claro que queríamos recetas reales, de esas que se preparan en las casas campesinas con ingredientes sencillos, pero llenos de tradición y sabor. Por eso, la búsqueda se centró en recetas muy caseras, de platos que realmente representaran lo que se cocina en el campo colombiano.
+                        Finalmente, logramos reunir y crear un total de 20 recetas, entre postres, comidas y bebidas, donde la leche es siempre la protagonista. Algunas de estas preparaciones fueron: mazamorra, ajiaco, masato, arroz con leche, entre otras delicias que nos hablan de lo simple, pero poderoso que puede ser un alimento como la leche en nuestra cultura.</p>
+                </div>
+                <div class="img_noticias">
+                    <img src="Imagenes/Receta 1.JPG" alt="Persona leyendo un periódico">
+                </div>
+            </article>
+    
+            <article class="section_noticias central">
+                <div class="text_noticias central-text">
+                    <p>Desde el diseño, queríamos que el recetario se sintiera cercano, cálido y visualmente atractivo. Por eso, optamos por una estética muy familiar y con un toque infantil, pensando especialmente en conectar de manera más sensible con los lectores. Cada receta tiene ilustraciones propias y gráficas diseñadas exclusivamente para ella, lo que permite que la lectura y el recorrido visual sean mucho más agradables y dinámicos.
+                        También se trabajó una estructura clara para cada preparación, con secciones organizadas de forma intuitiva: ingredientes, preparación y elementos gráficos de apoyo. Queríamos que el lector sintiera que alguien le está explicando con calma y cariño cómo hacer cada receta.</p>
+                </div>
+            </article>
+    
+            <article class="section_noticias reversed_noticias">
+                <div class="text_noticias">
+                    <p>Y ahí fue cuando nació Mayita, nuestra vaquita. Ella fue creada especialmente para este recetario, no solo como un personaje simpático, sino como una guía visual y una figura que acompaña a quien está leyendo. Mayita es la dueña de todas las recetas, y su presencia le da un tono tierno, confiable y amable al recetario. Representa el espíritu del proyecto MACAM: una mezcla de cariño, tradición y respeto por el trabajo del campo.
+                        Así, este recetario se convirtió en una pieza fundamental del proyecto, no solo como producto final, sino como una herramienta para acercar a las personas a la realidad y el valor del trabajo ganadero a través de algo tan cotidiano como cocinar.</p>
+                </div>
+                <div class="img_noticias">
+                    <img src="Imagenes/Receta 2.JPG" alt="Cámara grabando una noticia en vivo">
+                </div>
+            </article>
+    
+        </div>
+
+
+    <!-- Video box -->
+    <div class="video-box">
+        <div class="center-video">
+            <video autoplay loop muted>
+                <source src="Videos/Opening MACAM musicalizado-.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Botón subir al inicio -->
+    <div class="boton-top">
+        <a href="#Inicio" class="b-top" aria-label="Subir al inicio">↑</a>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const botonSubir = document.querySelector(".boton-top");
+
+        // Menú hamburguesa
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Botón subir al inicio
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                botonSubir.classList.add("show");
+            } else {
+                botonSubir.classList.remove("show");
+            }
+        });
+
+        botonSubir.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+    </script>
+
+    <!-- Footer -->
+    <footer id="Contactos" class="footer">
+        <div class="footer-container">
+            <!-- Sección de información -->
+            <div class="footer-info">
+                <h2>Macam</h2>
+                <h3>"Manos que Inspiran"</h3>
+                <h4>Valorización al campo</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt et turpis habitasse ultricies condimentum velit...</p>
+            </div>
+    
+            <!-- Menú de navegación -->
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#Incicio">Inicio</a></li>
+                    <li><a href="#Revista">Proyectos</a></li>
+                    <li><a href="#Testimonios">Testimonios</a></li>
+                    <li><a href="#Macam">Nosotros</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#Recetario">Recetario</a></li>
+                    <li><a href="Revista.html">Revista</a></li>
+                    <li><a href="documental.html">Documental</a></li>
+                </ul>
+            </div>
+    
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <div class="social-icons-grid">
+                    <div class="social-icon">
+                        <a href="#" target="_blank">
+                            <img src="./Imagenes/Iconos/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://youtube.com/@macam-66?si=kC0f0vwSlso7Xnd7" target="_blank">
+                            <img src="./Imagenes/Iconos/Youtube.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/macam_2.0?igsh=MTNhaWVuNzJnNjl3Ng==" target="_blank">
+                            <img src="./Imagenes/Iconos/instagram.png" alt="Instagram">
+                        </a>
+                        <span>@Macam_2.0</span>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.tiktok.com/@macam_2.0?_t=ZS-8vntktrNgNL&_r=1" target="_blank">
+                            <img src="./Imagenes/Iconos/Tik_tok.png" alt="TikTok">
+                        </a>
+                        <span>@M4c4m2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Línea de contacto y copyright -->
+        <div class="footer-bottom">
+            Nexus Space Colombia - Teléfono: +57 350-262-92-63 <br><br> &copy; Nexus Space Colombia, 2025
+        </div>
+    </footer>
+
+  <script src="Java/javascrip.js"></script>
+</body>
+</html>

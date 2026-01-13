@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilos_actualizado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Adamina&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Imagenes/icono-MACAM.png">
+    <title> MACAM </title>
+</head>
+<body>
+
+    <!-- Encabezado -->
+<header class="Top">
+    <img src="imagenes/icono-MACAM.png" alt="Logo-MACAM">
+    <img class="Titulo-MACAM" src="Imagenes/Titulo-MACAM.png" alt="MACAM" width="100%" height="100%">
+</header>
+
+<div class="Navbar">
+    <!-- Botón menú hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Spot">Proyectos</a></li>
+             <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#Noticias">Noticias</a></li>
+            <li><a href="#Recetas">Recetas</a></li>            
+            <li><a href="#Productora">Productora</a></li>
+            <li><a href="#Contactos">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Barra de búsqueda -->
+    <form class="search-container">
+        <input type="text" id="search" placeholder="Buscar..." required>
+        <button type="submit"><img src="Imagenes/lupa (1).png" width="17px" height="17px"></button>
+    </form>
+    
+</div>
+
+
+<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> 
+
+     <!-- Carrusel-->
+
+     <div id="Inicio" class="relleno">
+        <h2>BIENVENIDOS</h2>
+    </div>
+    
+    <div class="contenedor1">
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="Imagenes/Carrusel/IMG_20250315_082032180_HDR.jpg" alt="Imagen 1">
+                <img src="Imagenes/Carrusel/IMG_20250315_082343763_HDR.jpg" alt="Imagen 2">
+                <img src="Imagenes/Carrusel/IMG_20250315_082623943_HDR.jpg" alt="Imagen 3">
+                <img src="Imagenes/Carrusel/IMG_20250315_084735926_HDR.jpg" alt="Imagen 4">
+                <img src="Imagenes/Material Fotografico/18.jpg" alt="Imagen 5">
+                <img src="Imagenes/Material Fotografico/67.jpg" alt="Imagen 6">
+                <img src="Imagenes/Material Fotografico/37.jpg" alt="Imagen 7">
+                <img src="Imagenes/Material Fotografico/47.jpg" alt="Imagen 8">
+            </div>
+    
+            <div class="carousel-controls">
+                <button onclick="prevSlide()">◀</button>
+                <button onclick="nextSlide()">▶</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>   
+
+    <!-- Sobre Nosotros -->
+    <div class="eb" id="Macam">
+        <div class="container-1">
+            <!-- Onda decorativa debajo de las imágenes superiores -->
+            <div class="wave-container top">
+                <img src="Imagenes/onda.svg" alt="Onda decorativa">
+            </div>
+            
+            <!-- Imágenes superiores -->
+            <div class="image-box img1"><img src="Imagenes/Photos-001/Andres.JPG" alt="Imagen 1"></div>
+            <div class="image-box img2"><img src="Imagenes/Photos-001/Zai.JPG" alt="Imagen 2"></div>
+    
+            <!-- Onda decorativa uniendo la imagen superior izquierda con la central -->
+            <div class="wave-container middle">
+                <img src="Imagenes/onda 2.svg" alt="Onda decorativa">
+            </div>
+    
+            <!-- Onda decorativa paralela en la parte derecha -->
+            <div class="wave-container middle-right">
+                <img src="Imagenes/onda 4.svg" alt="Onda decorativa">
+            </div>
+    
+            <!-- Texto central -->
+            <div class="caja-de-texto">
+                <h2>¿QUIÉNES SOMOS?</h2>
+                <p>MACAM es proyecto multimedia dedicado
+a dignificar y visibilizar el arduo trabajo de los
+lecheros.
+Inspirada en las manos trabajadoras que
+sostienen el campo, MACAM busca generar
+reconocimiento y fomentar el valor que reciben
+por su labor.</p>
+            </div>
+    
+            <!-- Onda decorativa encima de las imágenes inferiores -->
+            <div class="wave-container bottom">
+                <img src="Imagenes/onda.svg" alt="Onda decorativa">
+            </div>
+    
+            <!-- Imágenes inferiores -->
+            <div class="image-box img5"><img src="Imagenes/Photos-001/Kelly.JPG" alt="Imagen 5"></div>
+            <div class="image-box img4"><img src="Imagenes/Photos-001/sebastian.JPG" alt="Imagen 4"></div>
+            <div class="image-box img6"><img src="Imagenes/Photos-001/Ana.JPG" alt="Imagen 6"></div>
+            <div class="image-box img3"><img src="Imagenes/Photos-001/Nicolle.JPG" alt="Imagen 3"></div>
+    
+            <!-- Nueva onda decorativa 500px más abajo -->
+            <div class="wave-container middle2">
+                <img src="Imagenes/onda 3.svg" alt="Onda decorativa">
+            </div>
+    
+            <!-- Nueva onda decorativa en la parte inferior derecha -->
+            <div class="wave-container middle-right-bottom">
+                <img src="Imagenes/onda 5.svg" alt="Onda decorativa">
+            </div>
+        </div>
+    
+    </div>
+     <br/> <br/> <br/> 
+
+
+      <div class="titulo-section">
+        <h2>OBJETIVOS</h2>
+    </div>
+    
+    <div class="objetivos" id="Objetivos">
+        <div class="container">
+            <div class="text-container">
+    
+                <div class="brown-box">
+                    <h2>Generar Reconocimiento</h2>
+                    <p>Posicionar a MACAM como una iniciativa clave en la visibilización del trabajo de los ganaderos lecheros, 
+                        destacando su esfuerzo y el valor de su labor.</p>
+                </div>
+    
+                <div class="white-box">
+                    <h2>Fomentar la conexión emocional</h2>
+                    <p>Crear contenido que humanice a los ganaderos, resaltando sus historias de vida, 
+                        sacrificios y la importancia de su trabajo para la sociedad.</p>
+                </div>
+            </div>
+    
+            <!-- Imagen central -->
+            <div class="center-image">
+                <img src="Imagenes/Material Fotografico/32.jpg  " alt="Imagen Central">
+            </div>
+    
+            <div class="text-container">
+                <div class="white-box">
+                    <h2>Crear conciencia sobre la injusticia en los pagos</h2>
+                    <p>Educar al público sobre la realidad económica de los ganaderos, 
+                        enfatizando la brecha entre su esfuerzo y la remuneración que reciben.</p>
+                </div>
+    
+                <div class="brown-box">
+                    <h2>Construir una comunidad activa</h2>
+                    <p>Fomentar la interacción y el apoyo en redes sociales mediante contenido participativo, encuestas, 
+                        testimonios y llamados a la acción.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="Spot" class="titulo-spot">
+        <h2>SPOT</h2>
+    </div>
+    
+    <div class="spot">
+    
+        <div class="video-spot">
+            <iframe  src="https://www.youtube.com/embed/Uq4TGRzshXA?si=pwczGyWKY_Q6o0lS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <div id="Recetario" class="titulo-revista">
+        <h2>RECETARIO</h2>
+    </div>
+    
+    <div class="revista">
+    
+        <div class="image-container">
+            <img src="Imagenes/foto_revista.jpg" alt="Imagen Nueva">
+        </div>
+    
+        <div class="text-box">
+            <p>
+              El recetario de MACAM visibiliza la labor ganadera desde la cocina, con 20 recetas tradicionales donde la leche es protagonista. Acompañado por Mayita, una vaquita entrañable que guía cada página, este recetario combina sabor, memoria y ternura en un diseño pensado para toda la familia.
+            </p>
+        </div>
+    
+        <div class="button-container">
+            <a href="Revista.html">VER MÁS</a>
+        </div>
+    
+    </div>
+
+
+    <div id="Documental" class="titulo-documental">
+        <h2>DOCUMENTAL</h2>
+    </div>
+    
+    <div class="documental">
+        <div class="image-container">
+                <video loop controls>
+                    <source src="Videos/teaser.mp4" type="video/mp4">
+                </video>
+        </div>
+    
+        <div class="text-box1">
+            <p>
+              “Manos que Inspiran” es un documental realizado por MACAM que narra la vida de Don José, un lechero de Usme Pueblo, cuyo trabajo encarna la resistencia, la memoria y el amor por la tierra. A través de una mirada íntima y sensible, esta pieza audiovisual visibiliza el conocimiento campesino y rinde homenaje a quienes alimentan al país con sus manos.
+            </p>
+        </div>
+    
+        <div class="button-container1">
+            <a href="documental.html">VER MÁS</a>
+        </div>
+    </div>
+
+
+<div id="testimonios" class="titulo-testimonios">
+    <h2>Testimonios</h2>
+</div>
+
+
+<section class="carrusel-testimonios">
+  <button class="testimonios-flecha testimonios-izquierda">&#10094;</button>
+
+  <div class="testimonios-carrusel-texto">
+    <div class="testimonios-carrusel-contenedor">
+      <div class="testimonios-slide activo">
+        <p>
+          Don Heralmo (69 años) <br/><br/>
+          Nacido en Fusagasugá, Don Heralmo aprendió las labores del campo desde niño. Con pesar, relata la pérdida de su esposa en un hecho trágico, pero también habla con orgullo de su vida de lucha. Ha participado en múltiples encuentros y diplomados, representando al campesinado con honestidad. “El campo no debe ser olvidado. Gracias a nuestro esfuerzo, llega la comida a la ciudad.”
+        </p>
+      </div>
+      <div class="testimonios-slide">
+        <p>Herón León Gutiérrez (72 años) <br/> <br/>
+Durante años, Herón León trabajó en la producción de leche. Rememora con cariño las labores de pastoreo y vacunación del ganado. Afirma: “Si se cuida bien, la vaca lechera es muy rentable.” El precio del litro de leche ha cambiado con los años, pero el compromiso del campesino sigue intacto
+</p>
+      </div>
+      <div class="testimonios-slide">Mireya Morales (64 años) <br> <br>
+Con cinco años de experiencia en el campo, Mireya ha sentido tanto el apoyo de su comunidad como la indiferencia de la ciudad. “El producto que sale del campo es puro, sin químicos, pero aún no se valora como debería. Los mayores lo reconocen, los jóvenes, no tanto.”
+“No tienes que ser grande para empezar, pero tienes que empezar para ser grande.”</p>
+      </div>
+
+      <div class="testimonios-puntos-navegacion">
+        <span class="testimonios-punto activo"></span>
+        <span class="testimonios-punto"></span>
+        <span class="testimonios-punto"></span>
+      </div>
+    </div>
+  </div>
+
+  <button class="testimonios-flecha testimonios-derecha">&#10095;</button>
+</section>
+
+
+
+<div id="Noticias" class="titulo-noticias">
+    <h2>NOTICIAS</h2>
+</div>
+
+
+<section class="noticias-section">  
+    <div class="carrusel-wrapper">
+      <button class="carrusel-btn prev-btn">&#10094;</button>
+      
+      <div class="carrusel">
+        <div class="carrusel-inner" id="carruselInner">
+
+          <!-- Noticias -->
+          <div class="noticia">
+            <a href="https://www.agronegocios.co/finca/red-lechera-del-cauca-proyecto-que-ayudara-al-sector-lechero-3688064" target="_blank">
+              <div class="noticia-box">
+                <img src="Imagenes/Noticias/01.webp" alt="Noticia 1">
+                <div class="contenido">
+                  <h3>RED LECHERA DEL CAUCA, LA INICIATIVA QUE BENEFICIARÁ 400 FAMILIAS DE LA REGIÓN</h3><br/>
+                  <p>La iniciativa **Red Lechera del Cauca**, apoyada por entidades públicas y privadas, busca transformar socialmente a unas 400 familias lecheras del Cauca mediante empleo, sostenibilidad y reconversión ganadera. Se enfocará en producción sostenible, fortalecimiento de capacidades, consumo responsable y tejido social. Surge como respuesta a la crisis del sector tras la salida de Alpina, que dejó a miles de ganaderos sin mercado para su leche.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="noticia">
+            <a href="https://www.agronegocios.co/finca/productores-lecheros-de-narino-recibieron-reconocimiento-por-sus-buenas-practicas-3980442" target="_blank">
+              <div class="noticia-box">
+                <img src="Imagenes/Noticias/02.webp" alt="Noticia 2">
+                <div class="contenido">
+                  <h3>PRODUCTORES LECHEROS DE NARIÑO RECIBIERON RECONOCIMIENTO POR SUS BUENAS PRÁCTICAS</h3><br/>
+                  <p>Desde 2022, Nariño ha destacado por sus buenas prácticas ganaderas, con 250 reconocimientos del ICA a productores locales. En 2023 se entregaron 170 más y se proyectan 450 para este año, posicionando al departamento como líder en el sector ganadero. Además, se anunció la apertura de una oficina del ICA en Cumbal para mejorar la atención a los productores. Nariño también es reconocido como una zona libre de tuberculosis y brucelosis, enfermedades que afectan a las vacas.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="noticia">
+            <a href="https://www.contextoganadero.com/economia/exportadores-de-ganado-quieren-mantener-aunque-el-dolar-juegue-en-contra" target="_blank">
+              <div class="noticia-box">
+                <img src="Imagenes/Noticias/03.webp" alt="Noticia 3">
+                <div class="contenido">
+                  <h3>EXPORTADORES DE GANADO QUIEREN MANTENER ENVÍOS AUNQUE EL DÓLAR JUEGUE EN CONTRA</h3><br/>
+                  <p>A pesar de la incertidumbre por la tasa de cambio y la competencia de Brasil, el sector ganadero colombiano busca mantener abiertos los mercados de exportación. El dólar alto ha favorecido temporalmente la competitividad, pero los altos costos internos y la mayor productividad brasileña siguen siendo retos. Expertos como Juan Gonzalo Botero y Miguel Dulcey destacan tanto las oportunidades como las amenazas, mientras el precio del dólar comienza a ceder tras dos semanas de alza.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="noticia">
+            <a href="https://www.contextoganadero.com/ganaderia-sostenible/desarrollan-alimento-para-ganado-que-reduce-emisiones-sin-bajar-produccion" target="_blank">
+              <div class="noticia-box">
+                <img src="Imagenes/Noticias/04.webp" alt="Noticia 4">
+                <div class="contenido">
+                  <h3>DESARROLLAN ALIMENTO PARA GANADO QUE REDUCE EMISIONES SIN BAJAR PRODUCCIÓN</h3><br/>
+                  <p>Científicos de la Universidad de Florida desarrollaron un suplemento para ganado, hecho de linaza y guisante, que reduce emisiones de metano y mejora la digestión, lo que podría aumentar la producción de leche y disminuir el impacto ambiental. Aunque los resultados en laboratorio son prometedores, aún deben probarse en condiciones reales. Expertos destacan su potencial, pero advierten que el costo y la adaptabilidad serán claves para su adopción.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="noticia">
+            <a href="https://www.contextoganadero.com/ganaderia-sostenible/presellado-ordeno-paso-que-cuida-las-vacas-la-leche-y-la-salud-de-los-consumidores" target="_blank">
+              <div class="noticia-box">
+                <img src="Imagenes/Noticias/05.webp" alt="Noticia 5">
+                <div class="contenido">
+                  <h3>PRESELLADO EN EL ORDEÑO, UN PASO QUE CUIDA LAS VACAS, LA LECHE Y LA SALUD DE LOS CONSUMIDORE</h3><br/>
+                  <p>El presellado o predipping, que consiste en desinfectar los pezones antes del ordeño, resurge como una práctica clave para mejorar la calidad de la leche, prevenir mastitis y cumplir con estándares del mercado. Expertos destacan su impacto en la salud animal, la rentabilidad y la seguridad alimentaria, ya que reduce bacterias y protege al consumidor. Aunque es un paso simple, su correcta aplicación marca la diferencia en la cadena láctea.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="noticia">
+            <a href="https://www.contextoganadero.com/otroseventos/lanzan-primera-plataforma-de-ia-para-remates-ganaderos-en-colombia" target="_blank">
+              <div class="noticia-box">
+                <img src="Imagenes/Noticias/06.webp" alt="Noticia 6">
+                <div class="contenido">
+                  <h3>LANZAN PRIMERA PLATAFORMA DE IA PARA REMATES GANADEROS EN COLOMBIA</h3> <br/>
+                  <p>El 8 de mayo en Rionegro, Antioquia, Colombia marcará un hito con el lanzamiento de la primera plataforma de inteligencia artificial para remates ganaderos, impulsada por Delta Genética Brangus. Este avance, presentado durante el Primer Remate Internacional Delta Brangus, reunirá ganaderías de cinco países y permitirá a los compradores comparar animales con datos genéticos, productivos y reproductivos. Con sede en Asdesilla y aliados internacionales, el evento busca posicionar la genética colombiana en el mercado global y democratizar el acceso a tecnología de punta para transformar la ganadería en América Latina.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      
+      <button class="carrusel-btn next-btn">&#10095;</button>
+    </div>
+</section>
+
+
+  <script>
+    const carruselInner = document.getElementById('carruselInner');
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    let currentIndex = 0;
+  
+    function getVisibleItems() {
+      if (window.innerWidth <= 600) return 1;
+      if (window.innerWidth <= 992) return 2;
+      return 3;
+    }
+  
+    function updateCarrusel() {
+      const itemWidth = carruselInner.querySelector('.noticia').offsetWidth;
+      const visibleItems = getVisibleItems();
+      const totalItems = carruselInner.children.length;
+      const maxIndex = totalItems - visibleItems;
+  
+      currentIndex = Math.max(0, Math.min(currentIndex, maxIndex));
+      carruselInner.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+  
+    nextBtn.addEventListener('click', () => {
+      currentIndex++;
+      updateCarrusel();
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      currentIndex--;
+      updateCarrusel();
+    });
+  
+    window.addEventListener('resize', updateCarrusel);
+    window.addEventListener('load', updateCarrusel);
+  </script>
+
+<br/> <br/> <br/> <br/> <br/> <br/> 
+
+<div id="Recetas" class="titulo-recetario">
+    <h2>RECETAS</h2>
+</div>
+
+
+<section class="recetario">
+    <div class="container">
+        <div class="recetario-grid">
+            <div class="recetario-texto">
+                <h2>Comparte tu creatividad culinaria</h2>
+                <p>¿Tienes una receta especial que deseas compartir con el mundo? ¡Este es el lugar perfecto para hacerlo! Envíanos tu receta y podrías verla publicada en nuestra revista.</p>
+
+            </div>
+            
+            <div class="recetario-form-container">
+                <form id="recetario-form" class="recetario-form" action="#" method="post">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribir..." required>
+
+                    <label for="localidad">Localidad</label>
+                    <select id="localidad" name="localidad" required>
+                        <option value="">Seleccionar</option>
+                        <option value="usaquen">Usaquén</option>
+                        <option value="chapinero">Chapinero</option>
+                        <option value="santafe">Santa Fe</option>
+                        <option value="sancristobal">San Cristóbal</option>
+                        <option value="usme">Usme</option>
+                        <option value="tunjuelito">Tunjuelito</option>
+                        <option value="bosa">Bosa</option>
+                        <option value="kennedy">Kennedy</option>
+                        <option value="fontibon">Fontibón</option>
+                        <option value="engativa">Engativá</option>
+                        <option value="suba">Suba</option>
+                        <option value="barriosunidos">Barrios Unidos</option>
+                        <option value="teusaquillo">Teusaquillo</option>
+                        <option value="losmártires">Los Mártires</option>
+                        <option value="antonionarino">Antonio Nariño</option>
+                        <option value="puentearanda">Puente Aranda</option>
+                        <option value="laCandelaria">La Candelaria</option>
+                        <option value="rafaeluribe">Rafael Uribe Uribe</option>
+                        <option value="ciudadbolivar">Ciudad Bolívar</option>
+                        <option value="sumapaz">Sumapaz</option>
+                    </select>
+
+                    <label for="receta">Escribe tu receta</label>
+                    <textarea id="receta" name="receta" placeholder="Escribir..." required></textarea>
+
+                    <div class="terminos-container">
+                      <label class="checkbox-container">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <span>Acepto los <a href="#" id="abrirTerminos">Términos y Condiciones</a></span>
+                      </label>
+                    </div>
+                    
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal de Términos y Condiciones -->
+<div id="modalTerminos" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" id="cerrarModal">&times;</span>
+    <h2>Términos y Condiciones del Formulario MACAM</h2>
+
+    <div class="modal-texto">
+      <p><strong>Términos y Condiciones de Uso del Formulario MACAM</strong><br><br>
+          <strong>1. Finalidad del Formulario:</strong><br>
+          Este formulario tiene como propósito recoger información, comentarios, aportes y/o recetas
+          tradicionales por parte del público interesado en el proyecto MACAM. Los datos recolectados
+          podrán ser utilizados como parte del recetario digital, publicaciones audiovisuales, piezas gráficas o
+          plataformas digitales asociadas a MACAM.  <br><br>
+
+          <strong>Tratamiento de Datos Personales</strong><br>
+          Tratamiento de Datos Personales
+          Los datos proporcionados, como su nombre, correo electrónico y cualquier otro campo de carácter
+          personal, serán tratados con confidencialidad y únicamente con fines relacionados con el proyecto.
+          En ningún caso serán vendidos ni compartidos con terceros no vinculados a MACAM.  <br><br>
+
+          <strong>Cesión de Derechos de Uso de Contenido</strong><br>
+          Al enviar el formulario, usted declara que la información, testimonios o recetas compartidas son de
+          su autoría o cuentan con autorización para su divulgación. Usted autoriza a MACAM a utilizar
+          dichos contenidos en medios digitales o impresos sin requerir un pago o compensación adicional.  <br><br>
+
+          <strong> Almacenamiento y Protección</strong><br>
+          Los datos recolectados se almacenarán en medios digitales seguros y solo tendrán acceso los
+          miembros responsables de la administración del proyecto MACAM. <br><br>
+
+          <strong>Modificaciones</strong><br>
+          MACAM se reserva el derecho de modificar este documento en cualquier momento. Las
+          actualizaciones se publicarán en el sitio web y se aplicarán desde el momento de su publicación.  <br><br>
+
+          <strong>Contacto</strong><br>
+          Para ejercer derechos relacionados con sus datos (acceso, rectificación, eliminación), o si tiene
+          preguntas sobre el tratamiento de la información, puede escribirnos a:
+          m4c4m24@gmail.com    <br><br>
+
+          Aceptación
+          Al marcar la casilla correspondiente en el formulario y enviarlo, usted manifiesta que ha leído,
+          comprendido y aceptado estos términos y condiciones
+          <br><br>
+          
+          <strong>Última actualización: 04 de July de 2025</strong><br>
+          
+      <hr>
+      <p style="text-align: center;">
+        📄 <a href="Documentos/Terminos_y_Condiciones_Formulario_MACAM.pdf" download target="_blank">
+          Descargar Términos y Condiciones en PDF
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  const abrirBtn = document.getElementById("abrirTerminos");
+  const modal = document.getElementById("modalTerminos");
+  const cerrarBtn = document.getElementById("cerrarModal");
+
+  abrirBtn.onclick = function(e) {
+    e.preventDefault();
+    modal.style.display = "block";
+  };
+
+  cerrarBtn.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+
+
+
+
+  <div id="Productora" class="titulo-noticias">
+      <h2>PRODUCTORA</h2>
+  </div>
+
+<section class="productora-seccion">
+  <!-- Logo centrado arriba -->
+  <div class="productora-logo-central">
+    <img src="Imagenes/Logo_Nexus.png" alt="Logo de la productora">
+  </div>
+<br><br>
+  <!-- Contenido en dos columnas -->
+  <div class="productora-layout">
+    
+    <!-- Imagen del grupo -->
+    <div class="productora-imagen-grupo">
+      <img src="Imagenes//fondo_integrantes.JPG" alt="Imagen del grupo de la productora">
+    </div>
+    <!-- Bloques de texto -->
+    <div class="productora-contenedor">
+      <!-- ¿Quiénes somos? -->
+      <div class="productora-bloque">
+        <div class="productora-contenido">
+          <div class="productora-texto">
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos una productora especializada en comunicación audiovisual 
+                que crea contenido de alto impacto como cortometrajes,
+                web. Nos enfocamos en conectar profundamente con nuestros
+                podcasts, piezas publicitarias (reels, posts, anuncios) y páginas
+                innovadoras que respondan a las necesidades reales de la
+                clientes, explorar nuevas tendencias y ofrecer soluciones
+                tecnología para transformar la forma en que las marcas comunican
+                sociedad. Creemos en el poder de las ideas, la creatividad y la
+                su mensaje.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Misión -->
+      <div class="productora-bloque">
+        <div class="productora-contenido">
+          <div class="productora-texto">
+            <h3>Misión</h3>
+            <p>Crear experiencias multimediales que conecten emocionalmente
+                  con las audiencias, ofreciendo soluciones audiovisuales
+                  innovadoras, funcionales y creativas para marcas,
+                  organizaciones y comunidades que buscan comunicar de manera
+                  auténtica en un entorno digital en constante evolución.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Objetivo -->
+      <div class="productora-bloque">
+        <div class="productora-contenido">
+          <div class="productora-texto">
+            <h3>Objetivo</h3>
+            <p>
+                  Desarrollar una plataforma creativa audiovisualv orientada a la producción de contenidos
+                  innovadores y personalizados, que integren nuevas tendencias narrativas, tecnologías
+                  digitales y estrategias de comunicación para conectar de forma auténtica con diferentes audiencias.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visión -->
+      <div class="productora-bloque">
+        <div class="productora-contenido">
+          <div class="productora-texto">
+            <h3>Visión</h3>
+            <p> Ser una productora multimedial
+                de referencia en el ámbitoaudiovisual y digital, reconocida
+                por su capacidad de innovar, adaptarse a las tendencias
+                emergentes y contar historias que generen impacto, construyendo
+                puentes entre las ideas y las personas a través de narrativas transmedia.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    
+    <script>
+      const bloques = document.querySelectorAll('.productora-bloque');
+    
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.2
+      });
+    
+      bloques.forEach(bloque => {
+        observer.observe(bloque);
+      });
+    </script>
+
+
+<div id="Integrrantes" class="titulo-integrantes">
+    <h2>INTEGRANTES</h2>
+</div>
+
+<section class="integrantes-section">
+    <div class="integrantes-container">
+        <div class="grid-integrantes">
+            <div class="integrante">
+                <div class="contenido">
+                    <div class="frontal" style="  background-image: url('Imagenes/Photos-001/kelly2.JPG');"></div>
+                    <div class="Trasera">
+                      <div class="text-trasera">
+                        <h3>Kelly Dayana Rincón Olaya</h3>
+                        <p>Guionista e investigadora <br><br>
+                            Realicé los procesos de investigación necesarios para sustentar el contenido del proyecto y 
+                            participé en la redacción de guiones y textos informativos. Mi objetivo fue aportar solidez 
+                            conceptual y claridad comunicativa en todos los materiales producidos.</p>
+                        
+                            <a href="pdfs/nicolle-pineda.pdf" target="_blank" class="cv-button">Ver hoja de vida</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="integrante">
+                <div class="contenido">
+                    <div class="frontal" style="background-image: url('Imagenes/Photos-001/sebastian2.JPG');"></div>
+                    <div class="Trasera">
+                      <div class="text-trasera">
+                        <h3>Sebastien Labacude Romero</h3>
+                        <p>Sonidista y guionista <br> <br> 
+                            Me encargué del diseño y edición sonora del proyecto, así como de la creación de guiones. 
+                            Mi trabajo se centró en lograr una narrativa sonora clara, emotiva y coherente con los 
+                            objetivos comunicativos del proyecto.</p>
+
+                            <a href="pdfs/sebastian-lavacude.pdf" target="_blank" class="cv-button">Ver hoja de vida</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="integrante">
+                <div class="contenido">
+                    <div class="frontal" style="background-image: url('Imagenes/Photos-001/ana2.JPG');"></div>
+                    <div class="Trasera">
+                        <div class="text-trasera">
+                        <h3>Ana Lucia Villafrade Arisa</h3>
+                        <p>Directora de arte y diseñadora gráfica  <br> <br>
+                          Desarrollé las piezas gráficas e ilustraciones que conforman el componente visual de MACAM. 
+                          Como directora de arte, trabajé en la ambientación estética de los espacios y en la construcción 
+                          visual del personaje ilustrado del proyecto.</p>
+
+                          <a href="pdfs/ana-villafrade.pdf" target="_blank" class="cv-button">Ver hoja de vida</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="integrante">
+                <div class="contenido">
+                    <div class="frontal" style="background-image: url('Imagenes/Photos-001/nicolle2.JPG');"></div>
+
+                    <div class="Trasera">
+                      <div class="text-trasera">
+                        <h3>Nicolle Daniela Pineda</h3>
+                        <p>Directora general de MACAM <br><br>
+                          Me encargo de la dirección general del proyecto. Dentro de mis funciones están la edición, 
+                          montaje audiovisual y la gestión de contenidos para redes sociales. También desempeño el 
+                          rol de community manager, asegurando una comunicación coherente y visualmente atractiva para 
+                          nuestra comunidad.</p>
+
+                          <a href="pdfs/nicolle-pineda.pdf" target="_blank" class="cv-button">Ver hoja de vida</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="integrante">
+                <div class="contenido">
+                    <div class="frontal" style="background-image: url('Imagenes/Photos-001/zai2.JPG');"></div>
+                    <div class="Trasera">
+                      <div class="text-trasera">
+                        <h3>Zaira Ximena Velosa Bravo</h3>
+                        <p>Directora de cámara y diseñadora gráfica <br> <br>
+                          Diseñé la identidad visual del proyecto por medio de ilustraciones originales y dirigí la cámara 
+                          durante los procesos de grabación. Mi responsabilidad fue construir el universo visual de MACAM 
+                          y registrar cada momento clave del proceso.</p>
+
+                          <a href="pdfs/zaira-velosa.pdf" target="_blank" class="cv-button">Ver hoja de vida</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="integrante">
+                <div class="contenido">
+                    <div class="frontal" style="background-image: url('Imagenes/Photos-001/andres2.JPG');"></div>
+                    <div class="Trasera">
+                      <div class="text-trasera">
+                        <h3>Andres Esteban Gomez Salamanca</h3>
+                        <p>Productor del proyecto <br><br>
+                          Como productor, desarrollé la página web de MACAM y estuve a cargo de la postproducción general. 
+                          Mi labor consistió en integrar los distintos componentes del proyecto, garantizando su 
+                          funcionalidad técnica y estética final.</p>
+
+                          <a href="pdfs/andres-gomez.pdf" target="_blank" class="cv-button">Ver hoja de vida</a> 
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<div class="video-box">
+    <div class="center-video">
+        <video autoplay loop muted>
+            <source src="Videos/Opening MACAM musicalizado-.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+
+<div class="boton-top">
+    <a href="#Inicio" class="b-top">↑</a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const botonSubir = document.querySelector(".boton-top");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) { // 🔹 Aparece al bajar 300px
+            botonSubir.classList.add("show");
+        } else {
+            botonSubir.classList.remove("show");
+        }
+    });
+
+    botonSubir.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" }); // 🔹 Desplazamiento suave
+    });
+});
+</script>
+
+
+<footer id="Contactos" class="footer">
+    <div class="footer-container">
+        <!-- Sección de información -->
+        <div class="footer-info">
+            <h1>MACAM</h1>
+            <h3>"Manos que Inspiran"</h3>
+            <h4>Valorización al campo</h4>
+            <p>La tierra nos une y la leche nos inspira. En MACAM promovemos el campo, la tradición y el sabor colombiano. Gracias por ser parte de esta historia</p>
+        </div>
+
+        <!-- Menú de navegación -->
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#Incicio">- Inicio</a></li>
+                <li><a href="#Recetario">- Proyectos</a></li>
+                <li><a href="#Testimonios">-Testimonios</a></li>
+                <li><a href="#Macam">- Nosotros</a></li>
+            </ul>
+            <ul>
+                <li><a href="#Spot">- Spot</a></li>
+                <li><a href="#Recetas">- Recetas</a></li>
+                <li><a href="Revista.html">- Recetario</a></li>
+                <li><a href="documental.html">- Documental</a></li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="footer-social">
+            <div class="social-icons-grid">
+                <div class="social-icon">
+                    <a href="https://whatsapp.com/channel/0029Vb61UNq7YSd0vvgIYJ22" target="_blank">
+                        <img src="./Imagenes/Iconos/whatsapp.png" alt="WhatsApp">
+                    </a>
+                </div>
+                <div class="social-icon">
+                    <a href="https://youtube.com/@macam-66?si=kC0f0vwSlso7Xnd7" target="_blank">
+                        <img src="./Imagenes/Iconos/Youtube.png" alt="Facebook">
+                    </a></div>
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/macam_2.0?igsh=MTNhaWVuNzJnNjl3Ng==" target="_blank">
+                        <img src="./Imagenes/Iconos/instagram.png" alt="Instagram">
+                    </a>
+                    <span>@Macam_2.0</span>
+                </div>
+                <div class="social-icon">
+                    <a href="https://www.tiktok.com/@macam_2.0?_t=ZS-8vntktrNgNL&_r=1" target="_blank">
+                        <img src="./Imagenes/Iconos/Tik_tok.png" alt="TikTok">
+                    </a>
+                    <span>@M4c4m2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Línea de contacto y copyright -->
+    <div class="footer-bottom">
+        Nexus Space Colombia - Teléfono: +57 350-262-92-63 <br><br> &copy; Nexus Space Colombia, 2025
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="Java/javascrip.js"></script>
+</body>
+</html>

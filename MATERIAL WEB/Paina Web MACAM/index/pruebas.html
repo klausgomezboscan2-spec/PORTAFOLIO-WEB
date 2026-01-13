@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="CSS/pruebas.css" />
+  <title>Document</title>
+  <style>
+    /* Añadí estilos mínimos para arrastrar sin selección */
+    .galeria.arrastrando {
+      cursor: grabbing;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .overlay-content img,
+    .overlay-content video {
+      max-width: 90vw;
+      max-height: 80vh;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .overlay-close {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 10000;
+    }
+  </style>
+</head>
+<body>
+  <section class="carrusel-seccion" aria-label="Galería de imágenes y videos">
+    <div class="galeria" id="galeria" tabindex="0" role="list">
+      <img src="imagenes/img1.jpg" alt="Imagen 1" role="listitem" />
+      <video src="videos/video1.mp4" muted playsinline preload="metadata" role="listitem"></video>
+      <img src="imagenes/img2.jpg" alt="Imagen 2" role="listitem" />
+      <video src="videos/video2.mp4" muted playsinline preload="metadata" role="listitem"></video>
+      <img src="imagenes/img3.jpg" alt="Imagen 3" role="listitem" />
+      <video src="videos/video3.mp4" muted playsinline preload="metadata" role="listitem"></video>
+    </div>
+  </section>
+
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-describedby="overlay-description">
+    <div class="overlay-content" id="overlay-content"></div>
+    <button class="overlay-close" id="overlay-close" aria-label="Cerrar">&times;</button>
+  </div>
+
+  <script>
+    const galeria = document.querySelector('.galeria');
+    const overlay = document.getElementById('overlay');
+    const overlayContent = document.getElementById('overlay-content');
+    const overlayClose = document.getElementById('overlay-close');
+
+    const velocidadAutoplay = 1; // px por frame
+
+    let isDragging = false;
+    let startX = 0;
+    let scrollLeft = 0;
+
+    // Guardamos los elementos originales para evitar duplicar indefinidamente
+    const elementosOriginales = Array.from(galeria.children);
+
+    function duplicarContenido() {
+      elementosOriginales.forEach(elemento => {
+        const clone = elemento.cloneNode(true);
+        galeria.appendChild(clone);
+      });
+    }
+    duplicarContenido();
+
+    function autoplay() {
+      if (!isDragging) { // Pausar autoplay mientras se arrastra
+        galeria.scrollLeft += velocidadAutoplay;
+        if (galeria.scrollLeft >= galeria.scrollWidth / 5) {
+          galeria.scrollLeft = 0;
+        }
+      }
+      requestAnimationFrame(autoplay);
+    }
+    requestAnimationFrame(autoplay);
+
+    // Drag con mouse
+    galeria.addEventListener('mousedown', e => {
+      isDragging = true;
+      galeria.classList.add('arrastrando');
+      startX = e.pageX - galeria.offsetLeft;
+      scrollLeft = galeria.scrollLeft;
+      e.preventDefault();
+    });
+
+    galeria.addEventListener('mouseleave', () => {
+      isDragging = false
+      galeria.classList.remove('arrastrando');
+    });
+
+    galeria.addEventListener('mouseup', () => {
+      isDragging = false;
+      galeria.classList.remove('arrastrando');
+    });
+
+    galeria.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      const x = e.pageX - galeria.offsetLeft;
+      const walk = (x - startX) * 2;
+      galeria.scrollLeft = scrollLeft - walk;
+    });
+
+    // Soporte touch para móviles (opcional)
+    galeria.addEventListener('touchstart', e => {
+      isDragging = false;
+      startX = e.touches[0].pageX - galeria.offsetLeft;
+      scrollLeft = galeria.scrollLeft;
+    });
+
+    galeria.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+
+    galeria.addEventListener('touchmove', e => {
+      if (!isDragging) return;
+      const x = e.touches[0].pageX - galeria.offsetLeft;
+      const walk = (x - startX) * 2;
+      galeria.scrollLeft = scrollLeft - walk;
+    });
+
+    // Abrir overlay con imagen o video
+    galeria.addEventListener('click', e => {
+      const target = e.target;
+      if (target.tagName === 'IMG' || target.tagName === 'VIDEO') {
+        const src = target.getAttribute('src');
+        const type = target.tagName.toLowerCase();
+
+        overlayContent.innerHTML = '';
+
+        if (type === 'img') {
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = target.alt || '';
+          overlayContent.appendChild(img);
+        } else if (type === 'video') {
+          const video = document.createElement('video');
+          video.src = src;
+          video.controls = true;
+          video.autoplay = true;
+          video.playsInline = true;
+          overlayContent.appendChild(video);
+        }
+
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // evitar scroll fondo
+      }
+    });
+
+    // Función para pausar videos en overlay
+    function pausarVideos() {
+      const videos = overlayContent.querySelectorAll('video');
+      videos.forEach(video => {
+        video.pause();
+        video.currentTime = 0;
+      });
+    }
+
+    // Cerrar overlay
+    overlayClose.addEventListener('click', () => {
+      overlay.style.display = 'none';
+      pausarVideos();
+      overlayContent.innerHTML = '';
+      document.body.style.overflow = 'auto';
+    });
+
+    // Cerrar overlay si clic fuera contenido
+    overlay.addEventListener('click', e => {
+      if (e.target === overlay) {
+        overlay.style.display = 'none';
+        pausarVideos();
+        overlayContent.innerHTML = '';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+</body>
+</html>
