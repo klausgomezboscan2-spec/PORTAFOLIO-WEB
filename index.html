@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Andres Gomez</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="estilos/estilos.css" />
+  <!-- Favicon SVG con 'AG' dorado -->
+  <link rel="icon" href="favicon.svg">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="navbar">
+      <h1 class="logo">AG</h1>
+      <button id="menu-toggle" class="menu-toggle" aria-controls="nav-list" aria-expanded="false">☰</button>
+      <nav id="nav-list" role="navigation" aria-hidden="true">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main>
+
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <div class="hero-texto">
+      <h2>Hola, soy Andrés Gómez</h2>
+      <p>Productor multimedia enfocado en diseño, desarrollo web y comunicación visual. Bienvenido a mi portafolio personal.</p>
+      <a href="#contacto" class="btn-cta">Contáctame</a>
+    </div>
+    <div class="hero-imagen">
+      <img src="material extra/IMG-20250311-WA0062.png" alt="Foto de Andres Gomez" />
+    </div>
+  </div>
+</section>
+
+
+<section id="sobre-mi" class="sobre-mi">
+  <div class="contenedor-sobre-mi">
+    <div class="texto-sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy <strong>Andres Esteban Gomez Salamanca</strong>, productor multimedia apasionado por el diseño visual, la comunicación digital y el desarrollo creativo. 
+        Me especializo en crear experiencias visuales impactantes que combinan diseño, tecnología y narrativas significativas.
+      </p>
+      <p>
+        A lo largo de mi camino profesional he trabajado en proyectos que integran ilustración, edición audiovisual, fotografía y desarrollo web.
+        Mi enfoque se centra en ofrecer soluciones visuales funcionales, coherentes y orientadas a resultados.
+      </p>
+      <a href="#proyectos" class="btn-cta">Ver mis proyectos</a>
+    </div>
+
+    <div class="grafico-sobre-mi">
+      <img src="material extra/ChatGPT Image 10 ene 2026, 03_48_54 p.m..png" alt="Ilustración creativa sobre mí">
+    </div>
+  </div>
+</section>
+
+<section id="formacion" class="formacion">
+  <div class="contenedor-formacion">
+    <h2>Formación Profesional</h2>
+    <p>Mi preparación académica me ha brindado una base sólida en diseño, tecnología y comunicación multimedia.</p>
+
+    <div class="tarjetas-formacion">
+      <div class="formacion-card">
+        <img src="material extra/logo_sena.png" alt="Técnico en Integración de Contenidos Digitales">
+        <h3>Técnico en Integración de Contenidos Digitales</h3>
+        <p>Formación orientada al diseño, animación y montaje de contenidos para medios interactivos. Me permitió desarrollar habilidades en producción audiovisual, edición y narrativas digitales.</p>
+      </div>
+
+      <div class="formacion-card">
+        <img src="material extra/logo_sena.png" alt="Tecnólogo en Producción Multimedia">
+        <h3>Tecnólogo en Producción Multimedia</h3>
+        <p>Especialización en desarrollo de productos digitales, con enfoque en diseño UX/UI, desarrollo web, contenidos audiovisuales y proyectos interactivos para plataformas multiplataforma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="proyectos" class="proyectos">
+  <h2>Mis Proyectos</h2>
+
+  <div class="filtros">
+    <button class="filtro activo" data-categoria="todos">Todos</button>
+    <button class="filtro" data-categoria="diseno">Diseño</button>
+    <button class="filtro" data-categoria="web">Programación Web</button>
+    <button class="filtro" data-categoria="audiovisual">Audiovisuales</button>
+    <button class="filtro" data-categoria="fotografia">Fotografía</button>
+  </div>
+
+  <div class="galeria">
+    <!-- Proyecto 1 -->
+<div class="proyecto diseno">
+  <img src="material extra/Mesa de trabajo 1.png" alt="Proyecto de Ilustración">
+  <h3>Recetario MACAM</h3>
+  <p>Diseño de marca para empresa emergente.</p>
+  <a class="btn-proyecto" href="https://heyzine.com/flip-book/fcff9b7a0a.html" target="_blank" rel="noopener">Abrir proyecto</a>
+</div>
+<br>
+<div class="proyecto diseno">
+  <img src="material extra/Mesa de trabajo 2.png" alt="Proyecto de Ilustración">
+  <h3>Manuel de Marca MACAM</h3>
+  <p>Diseño de marca para empresa emergente.</p>
+  <a class="btn-proyecto" href="https://heyzine.com/flip-book/d1c2dc24f5.html" target="_blank" rel="noopener">Abrir proyecto</a>
+</div>
+
+    <!-- Proyecto Web: Página Restaurante -->
+    <div class="proyecto web">
+      <img src="material extra/icono restaurante.png" alt="Plantilla Web Restaurante">
+      <h3>Plantilla Web Restaurante</h3>
+      <p>Proyecto: sitio web para restaurante.</p>
+      <a class="btn-proyecto" href="MATERIAL WEB/Pagina Restaurante/Pagina Restaurante/HTML/index.html" target="_blank" rel="noopener">Ver proyecto</a>
+    </div>
+
+    <!-- Proyecto Web: Página Web (portfolio) -->
+    <div class="proyecto web">
+      <img src="material extra/Icono tienda.png" alt="Plantilla Web Tienda">
+      <h3>Plantilla Web Tienda</h3>
+      <p>Proyecto: colección de páginas web personales.</p>
+      <a class="btn-proyecto" href="MATERIAL WEB/pagina web/index.html" target="_blank" rel="noopener">Ver proyecto</a>
+    </div>
+
+    <!-- Proyecto Web: Paina Web MACAM -->
+    <div class="proyecto web">
+      <img src="material extra/Logo MACAM.png" alt="Paina Web MACAM">
+      <h3>Paina Web MACAM</h3>
+      <p>Proyecto: sitio documental y multimedia.</p>
+      <a class="btn-proyecto" href="MATERIAL WEB/Paina Web MACAM/Index/index_actualizado.html" target="_blank" rel="noopener">Ver proyecto</a>
+    </div>
+
+    <!-- Proyecto 4 -->
+    <div class="proyecto audiovisual">
+    <iframe  src="https://www.youtube.com/embed/Uq4TGRzshXA?si=6uq_h2hzOPtHP-9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      
+    <h3>Spot MACAM</h3>
+      <p>Planeacion, direccion, grabación, edición y postproducción de video.</p>
+    </div>
+    <br/>
+    <div class="proyecto audiovisual">
+    <iframe src="https://www.youtube.com/embed/iE1wl9cWz3Y?si=ldlX9JCT1Sg1dE_a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      <h3>Documental MACAM</h3>
+      <p>Planeacion, direccion, grabación, edición y postproducción de video.</p>
+    </div>
+    
+
+    <!-- Proyecto 5 -->
+    <div class="proyecto fotografia">
+      <img src="Imagenes/Fotos Ice Swan/IMG_9406.JPG" alt="Proyecto Fotográfico">
+      <h3>Sesion Fotografica "Ice Swan"</h3>
+      <p>Sesión profesional con retoque.</p>
+      <button class="btn-proyecto" id="abrir-carrusel" data-gallery="Imagenes/Fotos Ice Swan/">Ver galería</button>
+    </div>
+
+    <!-- Puedes duplicar más proyectos y asignarles su clase correspondiente -->
+  </div>
+</section>
+
+
+<footer id="contacto" class="contacto-footer">
+  <div class="contenedor-contacto">
+    <!-- Iconos de contacto -->
+    <div class="info-contacto" style="display: flex; flex-direction: column; align-items: center;">
+      <h2 style="text-align: center; width: 100%;">Contáctame</h2>
+      <div class="redes-contacto">
+        <a href="mailto:salamancasalamanca16@gmail.com" title="Correo" target="_blank" rel="noopener">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a href="https://wa.me/573502629263" title="WhatsApp" target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/andresgomez8313?igsh=MTlnbW1maTV3ZWdxaw==" title="Instagram" target="_blank" rel="noopener">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea inferior tipo footer -->
+  <div class="creditos">
+    <p>&copy; 2025 Andres Gomez. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Carrusel Modal -->
+<div id="carrusel-modal" class="carrusel-modal">
+  <div class="carrusel-contenido">
+    <span class="carrusel-cerrar" id="cerrar-carrusel">&times;</span>
+    <button class="carrusel-nav carrusel-prev" id="carrusel-prev">&#10094;</button>
+    <img id="carrusel-img" src="" alt="Fotografía carrusel">
+    <button class="carrusel-nav carrusel-next" id="carrusel-next">&#10095;</button>
+    <div class="carrusel-indicadores" id="carrusel-indicadores"></div>
+  </div>
+</div>
+
+  <script src="estilos/javascript.js"></script>
+  <script src="carrusel-new.js"></script>
+</body>
+</html>

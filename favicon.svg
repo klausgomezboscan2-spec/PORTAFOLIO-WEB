@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="AG favicon">
+  <!-- Transparent background so AG renders over any background -->
+  <g fill="none" stroke="#D4AF37" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+    <!-- Cursive A: single flowing stroke, centered -->
+    <path d="M24 86 C36 30, 60 30, 72 86" />
+    <!-- cross stroke for A (subtle) -->
+    <path d="M40 66 C50 64, 58 64, 62 66" stroke-width="4"/>
+  </g>
+  <g fill="none" stroke="#D4AF37" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+    <!-- Cursive G: open loop with terminal, positioned to the right -->
+    <path d="M80 50 C72 30, 56 28, 46 44 C40 56, 48 74, 66 78 C82 82, 94 68, 78 60" />
+    <!-- small inward terminal to suggest the G's cross -->
+    <path d="M66 70 C70 68, 74 64, 70 60" stroke-width="4"/>
+  </g>
+</svg>
